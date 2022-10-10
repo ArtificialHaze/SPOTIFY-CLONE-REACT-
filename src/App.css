@@ -1,0 +1,288 @@
+/* GLOBAL STYLING */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* MAIN STYLING */
+
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.login > img {
+  width: 100%;
+}
+
+.login > a {
+  padding: 20px;
+  background-color: #1db954;
+  border-radius: 99px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.player__body {
+  display: flex;
+}
+
+.body {
+  flex: 0.8;
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+  height: 100vh;
+  color: #fff;
+  padding: 30px;
+  overflow-y: overlay;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__infoText {
+  flex: 1;
+}
+
+.body__infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body__infoText {
+  font-size: 14px;
+}
+
+.body__info > img {
+  height: 20vw;
+  margin: 0px 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__songs {
+  margin: 20px -30px;
+}
+
+.bod.bodyy__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__shuffle {
+  font-size: 80px !important;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body__shuffle:hover {
+  transition: 150ms ease-in transform;
+  transform: scale(1.08);
+}
+
+.sidebar {
+  height: 100vh;
+  flex: 0.2;
+  background-color: #040404;
+  color: #fff;
+  height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 230px;
+}
+
+.sidebar__logo {
+  /* object-fit: contain; */
+  padding: 10px;
+  height: 70px;
+  margin-right: auto;
+}
+
+.sidebar__title {
+  margin-left: 10px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  height: 65px;
+  width: 97%;
+  background-color: #282828;
+  padding: 20px;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  width: 300px;
+  flex: 0.3;
+}
+
+.footer__center {
+  flex: 0.4;
+  padding: 0px 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.footer__right {
+  flex: 0.3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.footer__green {
+  color: #1ed15e;
+}
+
+.footer__songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.footer__songInfo > p {
+  font-size: 12px;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+  transition: transform 250ms ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.footer__right * .MuiSlider-root {
+  color: green;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  color: grey;
+  height: 40px;
+  cursor: pointer;
+  transition: color 250ms ease-in;
+}
+
+.sidebarOption:hover {
+  color: #fff;
+}
+
+.sidebarOption__icon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.sidebarOption > p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__left {
+  flex: 0.6;
+  min-width: 70px;
+  background-color: #fff;
+  color: gray;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__left > input {
+  border: none;
+  width: 100%;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right > h4 {
+  margin-left: 10px;
+}
+
+.songRow {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.songRow__info {
+  margin-left: 20px;
+}
+
+.songRow__info > h1 {
+  font-size: 16px;
+}
+
+.songRow__info > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.songRow__album {
+  height: 40px;
+  width: 40px;
+}
+
+/* KEYFRAME */
+
+/* RESPONSIVE */
